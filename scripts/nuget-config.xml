@@ -1,0 +1,19 @@
+<Configuration>
+    <SourceDir>..\src</SourceDir>
+    <NugetDir>..\.nuget</NugetDir>
+    <PackagesDir>..\.nuget\packages</PackagesDir>
+    <ApiKeySecretFile>..\.nuget\nuget-apikey.secret.txt</ApiKeySecretFile>
+    <ApiKey></ApiKey>
+    <!--<ApiKey>%USERNAME%</ApiKey>-->
+    <!--<ApiKey>$env:USERNAME</ApiKey>-->
+    <PushSource>https://api.nuget.org/v3/index.json</PushSource>
+    <RestoreSources>
+        <Source>https://api.nuget.org/v3/index.json</Source>
+        <Source>https://api.nuget.org/v2/index.json</Source>
+    </RestoreSources>
+    <Packages>
+        <Package>BrimitPnP.SharePointOnline.Constants</Package>
+        <Package>BrimitPnP.SharePointOnline.Core</Package>
+        <Package>BrimitPnP.SharePointOnline.Provisioning</Package>
+    </Packages>
+</Configuration>
